@@ -1,1 +1,246 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+    }
+    
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    /* border: 1px solid black; */
+    font-family: 'Comic Neue', cursive;
+}
+/*general style*/
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #cacaaa;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #7f636e 12%, transparent 12.5%, transparent 87%, #7f636e 87.5%, #7f636e), linear-gradient(150deg, #7f636e 12%, transparent 12.5%, transparent 87%, #7f636e 87.5%, #7f636e), linear-gradient(30deg, #7f636e 12%, transparent 12.5%, transparent 87%, #7f636e 87.5%, #7f636e), linear-gradient(150deg, #7f636e 12%, transparent 12.5%, transparent 87%, #7f636e 87.5%, #7f636e), linear-gradient(60deg, #7f636e77 25%, transparent 25.5%, transparent 75%, #7f636e77 75%, #7f636e77), linear-gradient(60deg, #7f636e77 25%, transparent 25.5%, transparent 75%, #7f636e77 75%, #7f636e77);
+    background-size: 30px 53px;
+    background-position: 0 0, 0 0, 15px 26px, 15px 26px, 0 0, 15px 26px;
+}
+
+h1, h5{
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+
+   
+}
+
+.title{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    background-color: #c8ab83;
+}
+
+h2{
+    color: #7f636e;
+    font-size: 4rem;
+    padding: 1%;
+    font-family: 'Comic Neue', cursive;
+    
+}
+
+h5{
+    color: #7f636e;
+    font-size: 2rem;
+    padding: 1%;
+}
+
+h1{
+    margin: 15%;
+    font-size: 7rem;
+    color: #7f636e;
+    background-color: #c8ab83;
+    opacity: 0.9;
+    padding: 1%;
+    font-family: 'Comic Neue', cursive;
+}
+
+.navigation {
+    width: 50%;
+    display: flex;
+    background-color: #c8ab83;
+    overflow: hidden;
+    color: #7f636e;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+.navigation a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.navigation a:hover {
+    background-color: #ddd;
+    color: #7f636e;
+}
+
+
+.navigation a.active {
+    background-color: #55868c;
+    color: white;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1541876176131-3f5e84a7331a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin: 3%
+}
+
+.bestPuppers{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.pupTile{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    color: #7f636e;
+    background-color: #c8ab83;
+    padding: 1%;
+    min-height: 30vh;
+ 
+    
+}
+
+.pupTile img{
+    max-height: 20vh;
+}
+
+button{
+    margin: 5%;
+    background-color: #55868c;;
+    opacity: 0.9;
+    font-size: 3rem;
+    color: white;
+    padding: 1%;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the page looks fine at 800, nothing needs to be changed */
+@media(max-width: 800px){
+    
+}
+
+/* changes for 500px width screen */
+@media(max-width: 500px){
+
+    /* change flow to vertical */
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .title{
+    width: 90%;
+    margin-bottom: 1%;
+    }
+
+    .navigation {
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10% 35%;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+
+    .banner{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .bestPuppers{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .pupTile{
+        width: 50%;
+    }
+
+    .pupTile img{
+        width: 75%;
+    }
+
+}
